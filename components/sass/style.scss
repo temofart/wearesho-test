@@ -1,0 +1,38 @@
+@import 'compass/reset';
+@import 'susy';
+
+@import 'grids';
+@import 'variables';
+@import 'mixins';
+
+body {font-family: 'PT Sans', sans-serif;}
+
+.h_phone {
+	@include span(2);
+	@include push(2);
+
+	p {
+		margin-top: -33px;
+		margin-left: 10px;
+		color: $pink;
+	}
+	img {
+		width: 100%;
+	}
+}
+.h_logo {
+	@include span(4);
+}
+.h_feedback {
+	@include span(2);
+
+	p {
+		margin-top: -33px;
+		color: $pink;
+		text-align: right;
+		margin-right: 5%;
+	}	
+	img {
+		width: 100%;
+	}
+}
