@@ -33,13 +33,12 @@ a {
 	}
 }
 .h_logo {
-	@include span(2);
-	
+	@include span(2);	
 	img {
 		width: 100%;
 	}
 }
-.h_feedback {
+.h_feedback {	
 	@include span(2);
 	margin-top: 10px;
 	p {
@@ -53,8 +52,10 @@ a {
 	}
 	ul {
 		margin-top: 7px;
+		width: 300px;
 		li {
 		display: inline-block;
+		margin-right: 20px;
 	}
 	}	
 	a {
@@ -69,4 +70,65 @@ a {
 	transform: translateX(-50%);
 	margin-top: 3%;
 	z-index: -1;
+}
+
+@mixin img-menu($left, $top) {
+	position: absolute;
+	top: $top;
+	left: $left;
+
+}
+
+.img-menu {
+	.menu{
+	&-bird {
+@include img-menu(20%, 85px);
+}
+	&-gallery {
+@include img-menu(28%, 85px);
+}
+	&-bear {
+@include img-menu(35%, 85px);
+}
+	&-about {
+@include img-menu(59%, 85px);
+}
+	&-delivery {
+@include img-menu(65%, 85px);
+}
+	&-bin {
+@include img-menu(69%, 85px);
+}
+}
+}
+.place {
+	width: 100%;
+	height: 55px;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url('../img/search.png') no-repeat center center;
+	background-size: 230px;
+}
+.search {
+	position: absolute;
+	top: 31%;
+	left: 50%;
+	transform: translateX(-50%);
+	input {
+		width: 150px;
+		border: none !important;
+		outline:none !important;
+		font-family: 'Great Vibes', cursive;
+	}	
+}
+.bed {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	img {
+		margin-top: 80px;
+		width: 1050px;
+	}
 }
