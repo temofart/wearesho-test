@@ -6,28 +6,44 @@
 @import 'mixins';
 
 body {font-family: 'PT Sans', sans-serif;}
-
+a {
+	text-decoration: none;
+	color: $pink;
+	transition: all 0.3s ease;
+	&:hover {
+		color: $gray;
+	}
+}
 .h_phone {
 	@include span(2);
-	@include push(2);
-
+	@include push(3);
+	margin-top: 10px;
 	p {
 		margin-top: -33px;
 		margin-left: 10px;
 		color: $pink;
+	}
+	a {
+		margin-top: 23px;
+		margin-left: 10px;
+		display: inline-block;
 	}
 	img {
 		width: 100%;
 	}
 }
 .h_logo {
-	@include span(4);
+	@include span(2);
+	
+	img {
+		width: 100%;
+	}
 }
 .h_feedback {
 	@include span(2);
-
+	margin-top: 10px;
 	p {
-		margin-top: -33px;
+		margin-top: -55px;
 		color: $pink;
 		text-align: right;
 		margin-right: 5%;
@@ -35,4 +51,22 @@ body {font-family: 'PT Sans', sans-serif;}
 	img {
 		width: 100%;
 	}
+	ul {
+		margin-top: 7px;
+		li {
+		display: inline-block;
+	}
+	}	
+	a {
+		margin-top: 25px;
+		margin-left: 10px;
+	}
+}
+.arrow {
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 3%;
+	z-index: -1;
 }

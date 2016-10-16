@@ -46,38 +46,76 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   font-family: 'PT Sans', sans-serif; }
 
-/* line 10, ../components/sass/style.scss */
+/* line 9, ../components/sass/style.scss */
+a {
+  text-decoration: none;
+  color: #d5618b;
+  transition: all 0.3s ease; }
+/* line 13, ../components/sass/style.scss */
+a:hover {
+  color: #535353; }
+
+/* line 17, ../components/sass/style.scss */
 .h_phone {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
-  margin-left: 16.94915%; }
-/* line 14, ../components/sass/style.scss */
+  margin-left: 25.42373%;
+  margin-top: 10px; }
+/* line 21, ../components/sass/style.scss */
 .h_phone p {
   margin-top: -33px;
   margin-left: 10px;
   color: #d5618b; }
-/* line 19, ../components/sass/style.scss */
+/* line 26, ../components/sass/style.scss */
+.h_phone a {
+  margin-top: 23px;
+  margin-left: 10px;
+  display: inline-block; }
+/* line 31, ../components/sass/style.scss */
 .h_phone img {
   width: 100%; }
 
-/* line 23, ../components/sass/style.scss */
+/* line 35, ../components/sass/style.scss */
 .h_logo {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%; }
-
-/* line 26, ../components/sass/style.scss */
-.h_feedback {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%; }
-/* line 29, ../components/sass/style.scss */
+/* line 38, ../components/sass/style.scss */
+.h_logo img {
+  width: 100%; }
+
+/* line 42, ../components/sass/style.scss */
+.h_feedback {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 10px; }
+/* line 45, ../components/sass/style.scss */
 .h_feedback p {
-  margin-top: -33px;
+  margin-top: -55px;
   color: #d5618b;
   text-align: right;
   margin-right: 5%; }
-/* line 35, ../components/sass/style.scss */
+/* line 51, ../components/sass/style.scss */
 .h_feedback img {
   width: 100%; }
+/* line 54, ../components/sass/style.scss */
+.h_feedback ul {
+  margin-top: 7px; }
+/* line 56, ../components/sass/style.scss */
+.h_feedback ul li {
+  display: inline-block; }
+/* line 60, ../components/sass/style.scss */
+.h_feedback a {
+  margin-top: 25px;
+  margin-left: 10px; }
+
+/* line 65, ../components/sass/style.scss */
+.arrow {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3%;
+  z-index: -1; }
