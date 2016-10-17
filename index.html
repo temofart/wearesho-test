@@ -169,10 +169,46 @@
 <img src="img/cancel-active.png" class="cancel-active">
 </div> <!-- bin-cancel -->
 </div> <!-- bin-row -->
-
+<div class="total">
+	<img src="img/total_left.png" class="total-left">
+	<img src="img/total_count.png" class="total-count">
+	<img src="img/total_right.png" class="total-right">
+</div> <!-- total -->
+<div class="uzor">
+<img src="img/uzor.png">
+</div> <!-- uzor -->
+<div class="bin-form">
+	<img src="img/adress.png" class="adress">
+	<form>
+		<div class="first">
+			<input type="text" name="name" placeholder="ФИО">
+			<input type="text" name="email" placeholder="Email">
+			<input type="text" name="phone" placeholder="Телефон">
+		</div>
+		<div class="second">
+			<input type="text" name="adress" placeholder="Адрес доставки">
+			<select name="menu" size="1">
+<option value="first" selected="selected">Выберите способ оплаты</option>
+<option value="first">Первый вариант</option>
+<option  value="second">Второй вариант</option>
+</select>
+	<select name="menu" size="1">
+<option value="first" selected="selected">Выберите способ доставки</option>
+<option value="first">Первый вариант</option>
+<option  value="second">Второй вариант</option>
+</select>
+		</div>
+		<div class="third">
+			<textarea type="text" name="comment" placeholder="Комментарий к заказу"></textarea>
+		</div>
+	</form>
+</div> <!-- bin-form -->
+<button type="submit">Оформить заказ</button>
 </div> <!-- bin-content -->
 </div> <!-- popup bin -->
 	
+
+
   <!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
 
