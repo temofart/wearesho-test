@@ -49,71 +49,71 @@ body {
 /* line 9, ../components/sass/style.scss */
 a {
   text-decoration: none;
-  color: #d5618b;
-  transition: all 0.3s ease; }
+  color: #d5618b; }
 /* line 13, ../components/sass/style.scss */
 a:hover {
-  color: #535353; }
+  color: #535353;
+  transition: all 0.3s ease; }
 
-/* line 17, ../components/sass/style.scss */
+/* line 18, ../components/sass/style.scss */
 .h_phone {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 25.42373%;
   margin-top: 10px; }
-/* line 21, ../components/sass/style.scss */
+/* line 22, ../components/sass/style.scss */
 .h_phone p {
   margin-top: -33px;
   margin-left: 10px;
   color: #d5618b; }
-/* line 26, ../components/sass/style.scss */
+/* line 27, ../components/sass/style.scss */
 .h_phone a {
   margin-top: 23px;
   margin-left: 10px;
   display: inline-block; }
-/* line 31, ../components/sass/style.scss */
+/* line 32, ../components/sass/style.scss */
 .h_phone img {
   width: 100%; }
 
-/* line 35, ../components/sass/style.scss */
+/* line 36, ../components/sass/style.scss */
 .h_logo {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%; }
-/* line 37, ../components/sass/style.scss */
+/* line 38, ../components/sass/style.scss */
 .h_logo img {
   width: 100%; }
 
-/* line 41, ../components/sass/style.scss */
+/* line 42, ../components/sass/style.scss */
 .h_feedback {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   margin-top: 10px; }
-/* line 44, ../components/sass/style.scss */
+/* line 45, ../components/sass/style.scss */
 .h_feedback p {
   margin-top: -55px;
   color: #d5618b;
   text-align: right;
   margin-right: 5%; }
-/* line 50, ../components/sass/style.scss */
+/* line 51, ../components/sass/style.scss */
 .h_feedback img {
   width: 100%; }
-/* line 53, ../components/sass/style.scss */
+/* line 54, ../components/sass/style.scss */
 .h_feedback ul {
   margin-top: 7px;
   width: 300px; }
-/* line 56, ../components/sass/style.scss */
+/* line 57, ../components/sass/style.scss */
 .h_feedback ul li {
   display: inline-block;
   margin-right: 20px; }
-/* line 61, ../components/sass/style.scss */
+/* line 62, ../components/sass/style.scss */
 .h_feedback a {
   margin-top: 25px;
   margin-left: 10px; }
 
-/* line 66, ../components/sass/style.scss */
+/* line 67, ../components/sass/style.scss */
 .arrow {
   width: 100%;
   position: absolute;
@@ -122,38 +122,38 @@ a:hover {
   margin-top: 3%;
   z-index: -1; }
 
-/* line 84, ../components/sass/style.scss */
+/* line 85, ../components/sass/style.scss */
 .img-menu .menu-bird {
   position: absolute;
   top: 85px;
   left: 20%; }
-/* line 87, ../components/sass/style.scss */
+/* line 88, ../components/sass/style.scss */
 .img-menu .menu-gallery {
   position: absolute;
   top: 85px;
   left: 28%; }
-/* line 90, ../components/sass/style.scss */
+/* line 91, ../components/sass/style.scss */
 .img-menu .menu-bear {
   position: absolute;
   top: 85px;
   left: 35%; }
-/* line 93, ../components/sass/style.scss */
+/* line 94, ../components/sass/style.scss */
 .img-menu .menu-about {
   position: absolute;
   top: 85px;
   left: 59%; }
-/* line 96, ../components/sass/style.scss */
+/* line 97, ../components/sass/style.scss */
 .img-menu .menu-delivery {
   position: absolute;
   top: 85px;
   left: 65%; }
-/* line 99, ../components/sass/style.scss */
+/* line 100, ../components/sass/style.scss */
 .img-menu .menu-bin {
   position: absolute;
   top: 85px;
   left: 69%; }
 
-/* line 104, ../components/sass/style.scss */
+/* line 105, ../components/sass/style.scss */
 .place {
   width: 100%;
   height: 55px;
@@ -164,25 +164,36 @@ a:hover {
   background: url("../img/search.png") no-repeat center center;
   background-size: 230px; }
 
-/* line 114, ../components/sass/style.scss */
+/* line 115, ../components/sass/style.scss */
 .search {
   position: absolute;
   top: 31%;
   left: 50%;
   transform: translateX(-50%); }
-/* line 119, ../components/sass/style.scss */
+/* line 120, ../components/sass/style.scss */
 .search input {
   width: 150px;
   border: none !important;
   outline: none !important;
   font-family: 'Great Vibes', cursive; }
 
-/* line 126, ../components/sass/style.scss */
+/* line 127, ../components/sass/style.scss */
 .bed {
   margin: 0 auto;
   text-align: center;
   width: 100%; }
-/* line 130, ../components/sass/style.scss */
+/* line 131, ../components/sass/style.scss */
 .bed img {
   margin-top: 80px;
   width: 1050px; }
+
+/* line 136, ../components/sass/style.scss */
+.blue {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+  margin-top: -30px; }
+/* line 142, ../components/sass/style.scss */
+.blue img {
+  width: 100%; }
