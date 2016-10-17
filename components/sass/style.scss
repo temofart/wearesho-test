@@ -9,6 +9,7 @@ body {font-family: 'PT Sans', sans-serif;}
 a {
 	text-decoration: none;
 	color: $pink;
+	outline:none !important;
 	
 	&:hover {
 		color: $gray;
@@ -143,3 +144,120 @@ a {
 		width: 100%;
 	}
 }
+@mixin bin-close($show) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: $show;
+	transition: all 0.3s ease;
+}
+
+.modalbin {
+	width: 70%;
+	height: 600px;
+	margin-top: 70px;
+	background: #fff;
+	.bin-header {
+		position: absolute;
+		margin-top: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+	}	
+}
+.bin-close-hover {
+		@include bin-close(0);
+		&:hover {
+			opacity: 1;
+		}
+}
+.bin-close {
+		@include bin-close(1);
+}
+.bin-content {
+margin-top: 30px;
+}
+.bin-row .item-image{
+	@include span(1);
+	@include push(1);
+}
+.bin-row .item-name {
+	@include span(3);
+	color: $blue;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.bin-drop {
+	margin-top: 5px;
+	select {
+		@include span(3);
+		border-color: $gray-light;
+		background: url(../img/sarrow.png) no-repeat right; 
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		outline:none !important;
+		width: 95%;
+		padding: 5px 10px;
+		background-position-x: 190px;
+	}
+}
+.bin-howmuch-text {
+	@include span(3);
+	margin-top: 20px;
+	p {
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+}
+.bin-howmuch-choose {
+	@include span(1);
+	margin-top: 20px;
+	margin-left: -80px;
+	p {
+		display: inline-block;
+		margin-bottom: 7px;
+		font-size: 14px;
+	}
+	img {
+		padding: 0px 5px;
+	}
+}
+.bin-howmuch-choose2 {
+	@include span(1);
+	margin-top: 30px;
+	width: 70px;
+	text-align: center;
+	p {
+		display: inline-block;
+		margin-bottom: 7px;
+		font-size: 16px;
+	}
+	img {
+		padding: 0px 2px;
+	}
+}
+.bin-price {
+	@include span(1);
+	margin-top: 30px;
+	width: 70px;
+	p {
+		font-weight: bold;
+		color: $pink;
+	}
+}
+.bin-cancel {
+	@include span(1);
+	margin-top: 30px;
+}
+.cancel-active {
+	opacity: 0;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+

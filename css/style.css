@@ -49,71 +49,72 @@ body {
 /* line 9, ../components/sass/style.scss */
 a {
   text-decoration: none;
-  color: #d5618b; }
-/* line 13, ../components/sass/style.scss */
+  color: #d5618b;
+  outline: none !important; }
+/* line 14, ../components/sass/style.scss */
 a:hover {
   color: #535353;
   transition: all 0.3s ease; }
 
-/* line 18, ../components/sass/style.scss */
+/* line 19, ../components/sass/style.scss */
 .h_phone {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 25.42373%;
   margin-top: 10px; }
-/* line 22, ../components/sass/style.scss */
+/* line 23, ../components/sass/style.scss */
 .h_phone p {
   margin-top: -33px;
   margin-left: 10px;
   color: #d5618b; }
-/* line 27, ../components/sass/style.scss */
+/* line 28, ../components/sass/style.scss */
 .h_phone a {
   margin-top: 23px;
   margin-left: 10px;
   display: inline-block; }
-/* line 32, ../components/sass/style.scss */
+/* line 33, ../components/sass/style.scss */
 .h_phone img {
   width: 100%; }
 
-/* line 36, ../components/sass/style.scss */
+/* line 37, ../components/sass/style.scss */
 .h_logo {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%; }
-/* line 38, ../components/sass/style.scss */
+/* line 39, ../components/sass/style.scss */
 .h_logo img {
   width: 100%; }
 
-/* line 42, ../components/sass/style.scss */
+/* line 43, ../components/sass/style.scss */
 .h_feedback {
   width: 15.25424%;
   float: left;
   margin-right: 1.69492%;
   margin-top: 10px; }
-/* line 45, ../components/sass/style.scss */
+/* line 46, ../components/sass/style.scss */
 .h_feedback p {
   margin-top: -55px;
   color: #d5618b;
   text-align: right;
   margin-right: 5%; }
-/* line 51, ../components/sass/style.scss */
+/* line 52, ../components/sass/style.scss */
 .h_feedback img {
   width: 100%; }
-/* line 54, ../components/sass/style.scss */
+/* line 55, ../components/sass/style.scss */
 .h_feedback ul {
   margin-top: 7px;
   width: 300px; }
-/* line 57, ../components/sass/style.scss */
+/* line 58, ../components/sass/style.scss */
 .h_feedback ul li {
   display: inline-block;
   margin-right: 20px; }
-/* line 62, ../components/sass/style.scss */
+/* line 63, ../components/sass/style.scss */
 .h_feedback a {
   margin-top: 25px;
   margin-left: 10px; }
 
-/* line 67, ../components/sass/style.scss */
+/* line 68, ../components/sass/style.scss */
 .arrow {
   width: 100%;
   position: absolute;
@@ -122,38 +123,38 @@ a:hover {
   margin-top: 3%;
   z-index: -1; }
 
-/* line 85, ../components/sass/style.scss */
+/* line 86, ../components/sass/style.scss */
 .img-menu .menu-bird {
   position: absolute;
   top: 85px;
   left: 20%; }
-/* line 88, ../components/sass/style.scss */
+/* line 89, ../components/sass/style.scss */
 .img-menu .menu-gallery {
   position: absolute;
   top: 85px;
   left: 28%; }
-/* line 91, ../components/sass/style.scss */
+/* line 92, ../components/sass/style.scss */
 .img-menu .menu-bear {
   position: absolute;
   top: 85px;
   left: 35%; }
-/* line 94, ../components/sass/style.scss */
+/* line 95, ../components/sass/style.scss */
 .img-menu .menu-about {
   position: absolute;
   top: 85px;
   left: 59%; }
-/* line 97, ../components/sass/style.scss */
+/* line 98, ../components/sass/style.scss */
 .img-menu .menu-delivery {
   position: absolute;
   top: 85px;
   left: 65%; }
-/* line 100, ../components/sass/style.scss */
+/* line 101, ../components/sass/style.scss */
 .img-menu .menu-bin {
   position: absolute;
   top: 85px;
   left: 69%; }
 
-/* line 105, ../components/sass/style.scss */
+/* line 106, ../components/sass/style.scss */
 .place {
   width: 100%;
   height: 55px;
@@ -164,36 +165,176 @@ a:hover {
   background: url("../img/search.png") no-repeat center center;
   background-size: 230px; }
 
-/* line 115, ../components/sass/style.scss */
+/* line 116, ../components/sass/style.scss */
 .search {
   position: absolute;
   top: 31%;
   left: 50%;
   transform: translateX(-50%); }
-/* line 120, ../components/sass/style.scss */
+/* line 121, ../components/sass/style.scss */
 .search input {
   width: 150px;
   border: none !important;
   outline: none !important;
   font-family: 'Great Vibes', cursive; }
 
-/* line 127, ../components/sass/style.scss */
+/* line 128, ../components/sass/style.scss */
 .bed {
   margin: 0 auto;
   text-align: center;
   width: 100%; }
-/* line 131, ../components/sass/style.scss */
+/* line 132, ../components/sass/style.scss */
 .bed img {
   margin-top: 80px;
   width: 1050px; }
 
-/* line 136, ../components/sass/style.scss */
+/* line 137, ../components/sass/style.scss */
 .blue {
   width: 100%;
   height: 200px;
   position: relative;
   z-index: 1;
   margin-top: -30px; }
-/* line 142, ../components/sass/style.scss */
+/* line 143, ../components/sass/style.scss */
 .blue img {
   width: 100%; }
+
+/* line 155, ../components/sass/style.scss */
+.modalbin {
+  width: 70%;
+  height: 600px;
+  margin-top: 70px;
+  background: #fff; }
+/* line 160, ../components/sass/style.scss */
+.modalbin .bin-header {
+  position: absolute;
+  margin-top: -50px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+/* line 167, ../components/sass/style.scss */
+.bin-close-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s ease; }
+/* line 169, ../components/sass/style.scss */
+.bin-close-hover:hover {
+  opacity: 1; }
+
+/* line 173, ../components/sass/style.scss */
+.bin-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.3s ease; }
+
+/* line 176, ../components/sass/style.scss */
+.bin-content {
+  margin-top: 30px; }
+
+/* line 179, ../components/sass/style.scss */
+.bin-row .item-image {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-left: 8.47458%; }
+
+/* line 183, ../components/sass/style.scss */
+.bin-row .item-name {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  color: #1bb2be;
+  font-size: 14px;
+  margin-left: 20px; }
+
+/* line 189, ../components/sass/style.scss */
+.bin-drop {
+  margin-top: 5px; }
+/* line 191, ../components/sass/style.scss */
+.bin-drop select {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  border-color: #e1e1e1;
+  background: url(../img/sarrow.png) no-repeat right;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none !important;
+  width: 95%;
+  padding: 5px 10px;
+  background-position-x: 190px; }
+
+/* line 204, ../components/sass/style.scss */
+.bin-howmuch-text {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 20px; }
+/* line 207, ../components/sass/style.scss */
+.bin-howmuch-text p {
+  margin-bottom: 10px;
+  font-size: 14px; }
+
+/* line 212, ../components/sass/style.scss */
+.bin-howmuch-choose {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 20px;
+  margin-left: -80px; }
+/* line 216, ../components/sass/style.scss */
+.bin-howmuch-choose p {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 14px; }
+/* line 221, ../components/sass/style.scss */
+.bin-howmuch-choose img {
+  padding: 0px 5px; }
+
+/* line 225, ../components/sass/style.scss */
+.bin-howmuch-choose2 {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 30px;
+  width: 70px;
+  text-align: center; }
+/* line 230, ../components/sass/style.scss */
+.bin-howmuch-choose2 p {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 16px; }
+/* line 235, ../components/sass/style.scss */
+.bin-howmuch-choose2 img {
+  padding: 0px 2px; }
+
+/* line 239, ../components/sass/style.scss */
+.bin-price {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 30px;
+  width: 70px; }
+/* line 243, ../components/sass/style.scss */
+.bin-price p {
+  font-weight: bold;
+  color: #d5618b; }
+
+/* line 248, ../components/sass/style.scss */
+.bin-cancel {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 30px; }
+
+/* line 252, ../components/sass/style.scss */
+.cancel-active {
+  opacity: 0; }
+/* line 254, ../components/sass/style.scss */
+.cancel-active:hover {
+  opacity: 1; }

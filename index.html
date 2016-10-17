@@ -23,7 +23,7 @@
 	<ul>
 		<li><a href="#">О нас</a></li>
 		<li><a href="#">Доставка</a></li>
-		<li><a href="#">Корзина</a></li>
+		<li><a href="#" class="my_popup_open">Корзина</a></li>
 	</ul>
 	<p><a href="#">Обратная связь</a></p>
 	</div> <!-- h_feedback -->
@@ -41,15 +41,81 @@
 <form action="" method="post" class="search">
   <input type="search" name="" placeholder="поиск" class="input" />
 </form>
-</div>
+</div> <!-- search place -->
 <div class="bed">
 <img src="img/bed.png" >
-</div>
+</div> <!-- bed -->
 <div class="blue">
 	<img src="img/bluebg.png">
+</div> <!-- blue -->
+
+
+  <div id="my_popup" class="modalbin">
+  <img src="img/bin-header.png" class="bin-header">
+  <img src="img/bin-close.png" class="bin-close">
+  <img src="img/bin-close-hover.png" class="bin-close-hover my_popup_close">
+
+<div class="bin-content">
+<div class="bin-row">
+<div class="item-image">
+	<img src="img/bin-pic.png">
 </div>
+<div class="item-name">
+	<p><strong>Cotton House</strong><br>полуторное "Дамасская сирень"</p>
 
+	<form action="#" method="post" name="drop_down_box" class="bin-drop">
+<select name="menu" size="1">
+<option selected="selected" value="first">Полуторный</option>
+<option  value="second">Двухспальный</option>
+</select>
+</form>
+</div>
+<div class="bin-howmuch-text">
+<p>Кол-во наволочек</p>
+<p>Простынь с резинкой</p>	
+</div> <!-- bin-howmuch-text -->
+<div class="bin-howmuch-choose">
+<img src="img/arrow-left.png">
+<p>4</p>
+<img src="img/arrow-right.png"><br>
+<img src="img/arrow-left.png">
+<p>4</p>
+<img src="img/arrow-right.png">
+</div> <!-- bin-howmuch-choose -->
+<div class="bin-howmuch-choose2">
+<img src="img/arrow-left.png">
+<p>2 шт.</p>
+<img src="img/arrow-right.png">
+</div> <!-- bin-howmuch-choose2 -->
+<div class="bin-price">
+<p>1420 грн</p>
+</div> <!-- bin-price -->
+<div class="bin-cancel">
+<img src="img/cancel.png" class="cancel">
+<img src="img/cancel-active.png" class="cancel-active">
+</div> <!-- bin-cancel -->
+</div> <!-- bin-row -->
+</div> <!-- bin-content -->
+</div> <!-- popup bin -->
 	
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
 
+  <!-- Include jQuery Popup Overlay -->
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      $('#my_popup').popup({
+	  opacity: 0.8,
+	  transition: 'all 0.3s',
+	  autoopen: true,
+	  scrolllock: true,
+	  vertical: 'top'
+});
+
+    });
+  </script>
 </body>
 </html>
