@@ -201,7 +201,7 @@ a:hover {
 
 /* line 155, ../components/sass/style.scss */
 .modalbin {
-  width: 70%;
+  width: 60%;
   height: 600px;
   margin-top: 70px;
   background: #fff; }
@@ -240,9 +240,10 @@ a:hover {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%;
-  margin-left: 8.47458%; }
+  margin-left: 40px;
+  margin-right: 40px; }
 
-/* line 183, ../components/sass/style.scss */
+/* line 184, ../components/sass/style.scss */
 .bin-row .item-name {
   width: 23.72881%;
   float: left;
@@ -251,23 +252,22 @@ a:hover {
   font-size: 14px;
   margin-left: 20px; }
 
-/* line 189, ../components/sass/style.scss */
+/* line 190, ../components/sass/style.scss */
 .bin-drop {
   margin-top: 5px; }
-/* line 191, ../components/sass/style.scss */
+/* line 192, ../components/sass/style.scss */
 .bin-drop select {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
   border-color: #e1e1e1;
   background: url(../img/sarrow.png) no-repeat right;
-  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   outline: none !important;
   width: 95%;
   padding: 5px 10px;
-  background-position-x: 190px; }
+  background-position-x: 160px; }
 
 /* line 204, ../components/sass/style.scss */
 .bin-howmuch-text {
@@ -295,8 +295,11 @@ a:hover {
 /* line 221, ../components/sass/style.scss */
 .bin-howmuch-choose img {
   padding: 0px 5px; }
+/* line 224, ../components/sass/style.scss */
+.bin-howmuch-choose input {
+  margin-left: 19px; }
 
-/* line 225, ../components/sass/style.scss */
+/* line 228, ../components/sass/style.scss */
 .bin-howmuch-choose2 {
   width: 6.77966%;
   float: left;
@@ -304,37 +307,62 @@ a:hover {
   margin-top: 30px;
   width: 70px;
   text-align: center; }
-/* line 230, ../components/sass/style.scss */
+/* line 233, ../components/sass/style.scss */
 .bin-howmuch-choose2 p {
   display: inline-block;
   margin-bottom: 7px;
   font-size: 16px; }
-/* line 235, ../components/sass/style.scss */
+/* line 238, ../components/sass/style.scss */
 .bin-howmuch-choose2 img {
   padding: 0px 2px; }
 
-/* line 239, ../components/sass/style.scss */
+/* line 242, ../components/sass/style.scss */
 .bin-price {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%;
   margin-top: 30px;
-  width: 70px; }
-/* line 243, ../components/sass/style.scss */
+  width: 70px;
+  text-align: right; }
+/* line 247, ../components/sass/style.scss */
 .bin-price p {
   font-weight: bold;
   color: #d5618b; }
 
-/* line 248, ../components/sass/style.scss */
+/* line 252, ../components/sass/style.scss */
 .bin-cancel {
   width: 6.77966%;
-  float: left;
-  margin-right: 1.69492%;
-  margin-top: 30px; }
+  float: right;
+  margin-right: 0;
+  margin-right: 15px; }
 
-/* line 252, ../components/sass/style.scss */
+/* line 256, ../components/sass/style.scss */
+.cancel {
+  position: relative;
+  z-index: 0;
+  left: 25px;
+  top: 30px; }
+
+/* line 262, ../components/sass/style.scss */
 .cancel-active {
-  opacity: 0; }
-/* line 254, ../components/sass/style.scss */
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  left: 8px;
+  top: 30px;
+  transition: all 0.3s ease; }
+/* line 269, ../components/sass/style.scss */
 .cancel-active:hover {
   opacity: 1; }
+
+/* line 273, ../components/sass/style.scss */
+.bin-row {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }
+/* line 12, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.bin-row:after {
+  content: " ";
+  display: block;
+  clear: both; }
