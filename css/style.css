@@ -433,8 +433,9 @@ a:hover {
   width: 220px;
   margin-left: 15px;
   margin-top: 10px;
-  padding: 2px 5px; }
-/* line 336, ../components/sass/style.scss */
+  padding: 2px 5px;
+  outline: none !important; }
+/* line 337, ../components/sass/style.scss */
 .bin-form select {
   width: 234px;
   margin-left: 15px;
@@ -444,22 +445,24 @@ a:hover {
   -moz-appearance: none;
   -webkit-appearance: none;
   outline: none !important;
-  background-position-x: 205px; }
-/* line 347, ../components/sass/style.scss */
+  background-position-x: 205px;
+  padding-left: 5px; }
+/* line 349, ../components/sass/style.scss */
 .bin-form textarea {
   width: 230px;
   height: 90px;
   margin-left: 0px;
   margin-top: 10px;
-  padding-left: 5px; }
-/* line 354, ../components/sass/style.scss */
+  padding-left: 5px;
+  outline: none !important; }
+/* line 357, ../components/sass/style.scss */
 .bin-form input, .bin-form select, .bin-form textarea {
   border: 2px solid #e1e1e1;
   border-radius: 2px;
   color: #888888;
   font-family: 'PT Sans'; }
 
-/* line 361, ../components/sass/style.scss */
+/* line 364, ../components/sass/style.scss */
 .bin-content button {
   position: relative;
   left: 50%;
@@ -473,9 +476,9 @@ a:hover {
   color: white;
   font-size: 14px;
   outline: none; }
-/* line 374, ../components/sass/style.scss */
+/* line 377, ../components/sass/style.scss */
 .bin-content button:hover {
   background: #d74a7e; }
-/* line 377, ../components/sass/style.scss */
+/* line 380, ../components/sass/style.scss */
 .bin-content button:active {
   border-bottom: 2px solid #b1295b; }
