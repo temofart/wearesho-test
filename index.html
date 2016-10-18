@@ -13,22 +13,29 @@
 	<div class="h_phone">
 		<img src="img/phone_bg.png">
 		<p>(093) 456-76-87</p>
-		<a href="#">Каталог товаров</a>
 	</div> <!-- h_phone -->
 	<div class="h_logo">
 	<img src="img/logo.png">
 	</div>
 	<div class="h_feedback">
 	<img src="img/feedback_bg.png">
+	<p><a href="#">Обратная связь</a></p>
+	</div> <!-- h_feedback -->
+	
+</div> <!-- header -->
+<div class="arrow">
+	<img src="img/arrow.png">
+	
+</div> <!-- arrow -->
+<div class="menu">
+	<p><a href="#">Каталог товаров</a></p>
 	<ul>
 		<li><a href="#">О нас</a></li>
 		<li><a href="#">Доставка</a></li>
 		<li><a href="#" class="my_popup_open">Корзина</a></li>
 	</ul>
-	<p><a href="#">Обратная связь</a></p>
-	</div> <!-- h_feedback -->
-	<img src="img/arrow.png" class="arrow">
-</div> <!-- header -->
+	</div> <!-- menu -->
+
 <div class="img-menu">
 	<img src="img/bird.png" class="menu-bird">
 	<img src="img/gallery.png" class="menu-gallery">
@@ -39,7 +46,7 @@
 </div> <!-- img-menu -->
 <div class="place">
 <form action="" method="post" class="search">
-  <input type="search" name="" placeholder="поиск" class="input" />
+  <input type="search" name="" placeholder="Поиск" class="input" />
 </form>
 </div> <!-- search place -->
 <div class="bed">
@@ -221,7 +228,6 @@
       $('#my_popup').popup({
 	  opacity: 0.8,
 	  transition: 'all 0.3s',
-	  autoopen: true,
 	  scrolllock: true,
 	  vertical: 'top'
 });

@@ -18,9 +18,12 @@ a {
 		transition: all 0.3s ease;
 	}
 }
+.header {
+	@include container;
+}
 .h_phone {
-	@include span(2);
-	@include push(3);
+	@include span(3);
+	@include push(1);
 	margin-top: 10px;
 	p {
 		margin-top: -33px;
@@ -37,16 +40,16 @@ a {
 	}
 }
 .h_logo {
-	@include span(2);	
+	@include span(4);	
+	text-align: center;
 	img {
-		width: 100%;
 	}
 }
 .h_feedback {	
-	@include span(2);
+	@include span(3);
 	margin-top: 10px;
 	p {
-		margin-top: -55px;
+		margin-top: -33px;
 		color: $pink;
 		text-align: right;
 		margin-right: 5%;
@@ -54,57 +57,72 @@ a {
 	img {
 		width: 100%;
 	}
-	ul {
-		margin-top: 7px;
-		width: 300px;
-		li {
-		display: inline-block;
-		margin-right: 20px;
-	}
-	}	
-	a {
-		margin-top: 25px;
-		margin-left: 10px;
-	}
-}
+}	
 .arrow {
 	width: 100%;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	margin-top: 3%;
-	z-index: -1;
+    position: relative;
+    z-index: -1;
+    top: -100px;
+	img{
+		width: 100%;
+	}
+	p {
+		position: absolute;
+		bottom: 10px;
+	}
 }
-
-@mixin img-menu($left, $top) {
-	position: absolute;
-	top: $top;
-	left: $left;
+.menu {
+	@include container;
+	position: relative;
+    top: -125px;
+	p{
+		@include span(3);
+		@include push(1);
+	}
+	ul {
+		padding-left: 10px;
+		@include span(4 last);
+		li {
+			display: inline-block;
+			margin: 0px 10px;
+			margin-left: 30px;
+		}
+	}
 
 }
-
 .img-menu {
+	@include container;
+	position: relative;
+    top: -110px;
 	.menu{
-	&-bird {
-@include img-menu(20%, 85px);
+		&-bird{
+			@include span(1);
+		}
+		&-gallery{
+			@include span(1);
+			padding-left: 10px;
+		}
+		&-bear{
+			@include span(1);
+		}
+		&-about{
+			@include span(1);
+			@include push(5);
+		}
+		&-delivery{
+			@include span(1);
+			padding-left: 5px;
+		}
+		&-bin{
+			@include span(1 last);
+			width: 125px;
+		}
+	}
 }
-	&-gallery {
-@include img-menu(28%, 85px);
-}
-	&-bear {
-@include img-menu(35%, 85px);
-}
-	&-about {
-@include img-menu(59%, 85px);
-}
-	&-delivery {
-@include img-menu(65%, 85px);
-}
-	&-bin {
-@include img-menu(69%, 85px);
-}
-}
-}
+
+
+
+
 .place {
 	width: 100%;
 	height: 55px;
@@ -113,18 +131,23 @@ a {
 	left: 50%;
 	transform: translateX(-50%);
 	background: url('../img/search.png') no-repeat center center;
-	background-size: 230px;
+	background-size: 285px;
 }
 .search {
 	position: absolute;
-	top: 31%;
+	top: 32%;
 	left: 50%;
 	transform: translateX(-50%);
 	input {
-		width: 150px;
+		width: 230px;
 		border: none !important;
 		outline:none !important;
-		font-family: 'Great Vibes', cursive;
+		font-family: 'PT Sans';
+		background: url(../img/search-icon.png) no-repeat right;
+		transition: all 0.3s ease;
+		&:focus {
+		background: url(../img/search-active.png) no-repeat right;
+		}
 	}	
 }
 .bed {
@@ -132,7 +155,7 @@ a {
 	text-align: center;
 	width: 100%;
 	img {
-		margin-top: 80px;
+		margin-top: -80px;
 		width: 1050px;
 	}
 }
@@ -338,7 +361,7 @@ margin-top: 30px;
 		width: 234px;
 		margin-left: 15px;
 		margin-top: 10px;
-		padding: 1px 0px;
+		padding: 2px 0px;
 		background: url(../img/sarrow.png) no-repeat right;
 		-moz-appearance: none;
 		-webkit-appearance: none;
