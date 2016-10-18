@@ -28,13 +28,24 @@
 	
 </div> <!-- arrow -->
 <div class="menu">
-	<p><a href="#">Каталог товаров</a></p>
+<div class="dropdown">
+<p><a href="#">Каталог товаров</a></p>
+<ul class="hidden">
+	<li><a href="#">Постельное белье</a></li>
+	<li><a href="#">Пижамы</a></li>
+	<li><a href="#">Подушки и одеяла</a></li>
+	<li><a href="#">Полотенца</a></li>
+	<li><a href="#">Халаты</a></li>
+</ul>
+</div> <!-- dropdown -->
+<div class="ulmenu">
 	<ul>
 		<li><a href="#">О нас</a></li>
 		<li><a href="#">Доставка</a></li>
 		<li><a href="#" class="my_popup_open">Корзина</a></li>
 	</ul>
-	</div> <!-- menu -->
+	</div>
+</div> <!-- menu -->
 
 <div class="img-menu">
 	<img src="img/bird.png" class="menu-bird">
@@ -221,6 +232,7 @@
 
   <!-- Include jQuery Popup Overlay -->
   <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+  <script src="js/script.js"></script>
 
   <script>
     $(document).ready(function() {

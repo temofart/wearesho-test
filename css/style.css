@@ -129,6 +129,41 @@ a:hover {
   bottom: 10px; }
 
 /* line 74, ../components/sass/style.scss */
+.hidden {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 140px;
+  transition: all 0.3s ease;
+  padding-top: 10px; }
+/* line 81, ../components/sass/style.scss */
+.hidden li {
+  padding: 10px 3px;
+  border: 1px solid #ffe8f1;
+  background: white;
+  transition: all 0.2s ease; }
+/* line 86, ../components/sass/style.scss */
+.hidden li:hover {
+  background: #ffe8f1; }
+/* line 88, ../components/sass/style.scss */
+.hidden li:hover a {
+  color: #535353 !important; }
+/* line 92, ../components/sass/style.scss */
+.hidden li a {
+  padding: 10px 1px; }
+
+/* line 97, ../components/sass/style.scss */
+.dropdown p {
+  background: url(../img/m-def.png) no-repeat right;
+  width: 135px;
+  transition: all 0.2s ease; }
+
+/* line 103, ../components/sass/style.scss */
+.dropdown:hover p {
+  background: url(../img/m-act.png) no-repeat right;
+  transition: all 0.3s ease; }
+
+/* line 108, ../components/sass/style.scss */
 .menu {
   max-width: 960px;
   margin-left: auto;
@@ -140,25 +175,29 @@ a:hover {
   content: " ";
   display: block;
   clear: both; }
-/* line 78, ../components/sass/style.scss */
-.menu p {
+/* line 112, ../components/sass/style.scss */
+.menu .dropdown {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 8.47458%; }
-/* line 82, ../components/sass/style.scss */
-.menu ul {
+/* line 116, ../components/sass/style.scss */
+.menu .dropdown:hover .hidden {
+  display: block;
+  transition: all 0.3s ease; }
+/* line 123, ../components/sass/style.scss */
+.menu .ulmenu ul {
   padding-left: 10px;
   width: 32.20339%;
   float: right;
   margin-right: 0; }
-/* line 85, ../components/sass/style.scss */
-.menu ul li {
+/* line 126, ../components/sass/style.scss */
+.menu .ulmenu ul li {
   display: inline-block;
   margin: 0px 10px;
   margin-left: 30px; }
 
-/* line 93, ../components/sass/style.scss */
+/* line 135, ../components/sass/style.scss */
 .img-menu {
   max-width: 960px;
   margin-left: auto;
@@ -170,42 +209,42 @@ a:hover {
   content: " ";
   display: block;
   clear: both; }
-/* line 98, ../components/sass/style.scss */
+/* line 140, ../components/sass/style.scss */
 .img-menu .menu-bird {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%; }
-/* line 101, ../components/sass/style.scss */
+/* line 143, ../components/sass/style.scss */
 .img-menu .menu-gallery {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%;
   padding-left: 10px; }
-/* line 105, ../components/sass/style.scss */
+/* line 147, ../components/sass/style.scss */
 .img-menu .menu-bear {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%; }
-/* line 108, ../components/sass/style.scss */
+/* line 150, ../components/sass/style.scss */
 .img-menu .menu-about {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 42.37288%; }
-/* line 112, ../components/sass/style.scss */
+/* line 154, ../components/sass/style.scss */
 .img-menu .menu-delivery {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%;
   padding-left: 5px; }
-/* line 116, ../components/sass/style.scss */
+/* line 158, ../components/sass/style.scss */
 .img-menu .menu-bin {
   width: 6.77966%;
   float: right;
   margin-right: 0;
   width: 125px; }
 
-/* line 124, ../components/sass/style.scss */
+/* line 166, ../components/sass/style.scss */
 .place {
   max-width: 960px;
   margin-left: auto;
@@ -218,7 +257,7 @@ a:hover {
   content: " ";
   display: block;
   clear: both; }
-/* line 130, ../components/sass/style.scss */
+/* line 172, ../components/sass/style.scss */
 .place .search {
   width: 32.20339%;
   float: left;
@@ -228,7 +267,7 @@ a:hover {
   text-align: center;
   background: url("../img/search.png") no-repeat center center;
   background-size: 285px; }
-/* line 137, ../components/sass/style.scss */
+/* line 179, ../components/sass/style.scss */
 .place .search input {
   width: 230px;
   position: absolute;
@@ -240,59 +279,59 @@ a:hover {
   font-family: 'PT Sans';
   background: url(../img/search-icon.png) no-repeat right;
   transition: all 0.3s ease; }
-/* line 148, ../components/sass/style.scss */
+/* line 190, ../components/sass/style.scss */
 .place .search input:focus {
   background: url(../img/search-active.png) no-repeat right; }
 
-/* line 155, ../components/sass/style.scss */
+/* line 197, ../components/sass/style.scss */
 .bed {
   margin: 0 auto;
   text-align: center;
   width: 100%; }
-/* line 159, ../components/sass/style.scss */
+/* line 201, ../components/sass/style.scss */
 .bed img {
   margin-top: -170px;
   width: 1050px; }
 
-/* line 164, ../components/sass/style.scss */
+/* line 206, ../components/sass/style.scss */
 .blue {
   width: 100%;
   height: 200px;
   position: relative;
   z-index: 1;
   margin-top: -30px; }
-/* line 170, ../components/sass/style.scss */
+/* line 212, ../components/sass/style.scss */
 .blue img {
   width: 100%; }
 
-/* line 182, ../components/sass/style.scss */
+/* line 224, ../components/sass/style.scss */
 .modalbin {
   width: 60%;
   height: 400px;
   margin-top: 70px;
   background: #fff; }
-/* line 187, ../components/sass/style.scss */
+/* line 229, ../components/sass/style.scss */
 .modalbin .bin-header {
   position: absolute;
   margin-top: -50px;
   left: 50%;
   transform: translateX(-50%); }
-/* line 193, ../components/sass/style.scss */
+/* line 235, ../components/sass/style.scss */
 .modalbin .total {
   background: transparent !important; }
 
-/* line 197, ../components/sass/style.scss */
+/* line 239, ../components/sass/style.scss */
 .bin-close-hover {
   position: absolute;
   top: 0;
   right: 0;
   opacity: 0;
   transition: all 0.3s ease; }
-/* line 199, ../components/sass/style.scss */
+/* line 241, ../components/sass/style.scss */
 .bin-close-hover:hover {
   opacity: 1; }
 
-/* line 203, ../components/sass/style.scss */
+/* line 245, ../components/sass/style.scss */
 .bin-close {
   position: absolute;
   top: 0;
@@ -300,11 +339,11 @@ a:hover {
   opacity: 1;
   transition: all 0.3s ease; }
 
-/* line 206, ../components/sass/style.scss */
+/* line 248, ../components/sass/style.scss */
 .bin-content {
   margin-top: 30px; }
 
-/* line 209, ../components/sass/style.scss */
+/* line 251, ../components/sass/style.scss */
 .bin-row .item-image {
   width: 6.77966%;
   float: left;
@@ -312,7 +351,7 @@ a:hover {
   margin-left: 40px;
   margin-right: 40px; }
 
-/* line 214, ../components/sass/style.scss */
+/* line 256, ../components/sass/style.scss */
 .bin-row .item-name {
   width: 23.72881%;
   float: left;
@@ -321,10 +360,10 @@ a:hover {
   font-size: 13px;
   margin-left: 20px; }
 
-/* line 220, ../components/sass/style.scss */
+/* line 262, ../components/sass/style.scss */
 .bin-drop {
   margin-top: 5px; }
-/* line 222, ../components/sass/style.scss */
+/* line 264, ../components/sass/style.scss */
 .bin-drop select {
   width: 23.72881%;
   float: left;
@@ -338,37 +377,37 @@ a:hover {
   padding: 5px 10px;
   background-position-x: 160px; }
 
-/* line 234, ../components/sass/style.scss */
+/* line 276, ../components/sass/style.scss */
 .bin-howmuch-text {
   width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
   margin-top: 20px; }
-/* line 237, ../components/sass/style.scss */
+/* line 279, ../components/sass/style.scss */
 .bin-howmuch-text p {
   margin-bottom: 10px;
   font-size: 13px; }
 
-/* line 242, ../components/sass/style.scss */
+/* line 284, ../components/sass/style.scss */
 .bin-howmuch-choose {
   width: 6.77966%;
   float: left;
   margin-right: 1.69492%;
   margin-top: 20px;
   margin-left: -80px; }
-/* line 246, ../components/sass/style.scss */
+/* line 288, ../components/sass/style.scss */
 .bin-howmuch-choose p {
   display: inline-block;
   margin-bottom: 7px;
   font-size: 14px; }
-/* line 251, ../components/sass/style.scss */
+/* line 293, ../components/sass/style.scss */
 .bin-howmuch-choose img {
   padding: 0px 5px; }
-/* line 254, ../components/sass/style.scss */
+/* line 296, ../components/sass/style.scss */
 .bin-howmuch-choose input {
   margin-left: 19px; }
 
-/* line 258, ../components/sass/style.scss */
+/* line 300, ../components/sass/style.scss */
 .bin-howmuch-choose2 {
   width: 6.77966%;
   float: left;
@@ -376,16 +415,16 @@ a:hover {
   margin-top: 30px;
   width: 70px;
   text-align: center; }
-/* line 263, ../components/sass/style.scss */
+/* line 305, ../components/sass/style.scss */
 .bin-howmuch-choose2 p {
   display: inline-block;
   margin-bottom: 7px;
   font-size: 16px; }
-/* line 268, ../components/sass/style.scss */
+/* line 310, ../components/sass/style.scss */
 .bin-howmuch-choose2 img {
   padding: 0px 2px; }
 
-/* line 272, ../components/sass/style.scss */
+/* line 314, ../components/sass/style.scss */
 .bin-price {
   width: 6.77966%;
   float: left;
@@ -393,26 +432,26 @@ a:hover {
   margin-top: 30px;
   width: 70px;
   text-align: right; }
-/* line 277, ../components/sass/style.scss */
+/* line 319, ../components/sass/style.scss */
 .bin-price p {
   font-weight: bold;
   color: #d5618b; }
 
-/* line 282, ../components/sass/style.scss */
+/* line 324, ../components/sass/style.scss */
 .bin-cancel {
   width: 6.77966%;
   float: right;
   margin-right: 0;
   margin-right: 15px; }
 
-/* line 286, ../components/sass/style.scss */
+/* line 328, ../components/sass/style.scss */
 .cancel {
   position: relative;
   z-index: 0;
   left: 25px;
   top: 30px; }
 
-/* line 292, ../components/sass/style.scss */
+/* line 334, ../components/sass/style.scss */
 .cancel-active {
   opacity: 0;
   position: relative;
@@ -420,11 +459,11 @@ a:hover {
   left: 8px;
   top: 30px;
   transition: all 0.3s ease; }
-/* line 299, ../components/sass/style.scss */
+/* line 341, ../components/sass/style.scss */
 .cancel-active:hover {
   opacity: 1; }
 
-/* line 303, ../components/sass/style.scss */
+/* line 345, ../components/sass/style.scss */
 .bin-row {
   max-width: 960px;
   margin-left: auto;
@@ -436,69 +475,69 @@ a:hover {
   display: block;
   clear: both; }
 
-/* line 307, ../components/sass/style.scss */
+/* line 349, ../components/sass/style.scss */
 .total {
   width: 100%;
   height: 50px;
   margin-top: 50px; }
-/* line 311, ../components/sass/style.scss */
+/* line 353, ../components/sass/style.scss */
 .total .total-left {
   position: absolute;
   left: 0; }
-/* line 315, ../components/sass/style.scss */
+/* line 357, ../components/sass/style.scss */
 .total .total-right {
   position: absolute;
   right: 0; }
-/* line 319, ../components/sass/style.scss */
+/* line 361, ../components/sass/style.scss */
 .total .total-count {
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
 
-/* line 326, ../components/sass/style.scss */
+/* line 368, ../components/sass/style.scss */
 .uzor img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   top: 10px; }
 
-/* line 333, ../components/sass/style.scss */
+/* line 375, ../components/sass/style.scss */
 .bin-form {
   width: 100%;
   height: 200px;
   background: #fff; }
-/* line 337, ../components/sass/style.scss */
+/* line 379, ../components/sass/style.scss */
 .bin-form .adress {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 10px; }
-/* line 343, ../components/sass/style.scss */
+/* line 385, ../components/sass/style.scss */
 .bin-form .first {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%; }
-/* line 345, ../components/sass/style.scss */
+/* line 387, ../components/sass/style.scss */
 .bin-form .first input {
   margin-left: 20px; }
-/* line 349, ../components/sass/style.scss */
+/* line 391, ../components/sass/style.scss */
 .bin-form .second {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%; }
-/* line 352, ../components/sass/style.scss */
+/* line 394, ../components/sass/style.scss */
 .bin-form .third {
   width: 32.20339%;
   float: right;
   margin-right: 0; }
-/* line 355, ../components/sass/style.scss */
+/* line 397, ../components/sass/style.scss */
 .bin-form input {
   width: 220px;
   margin-left: 15px;
   margin-top: 10px;
   padding: 2px 5px;
   outline: none !important; }
-/* line 362, ../components/sass/style.scss */
+/* line 404, ../components/sass/style.scss */
 .bin-form select {
   width: 234px;
   margin-left: 15px;
@@ -510,7 +549,7 @@ a:hover {
   outline: none !important;
   background-position-x: 205px;
   padding-left: 5px; }
-/* line 374, ../components/sass/style.scss */
+/* line 416, ../components/sass/style.scss */
 .bin-form textarea {
   width: 230px;
   height: 90px;
@@ -518,14 +557,14 @@ a:hover {
   margin-top: 10px;
   padding-left: 5px;
   outline: none !important; }
-/* line 382, ../components/sass/style.scss */
+/* line 424, ../components/sass/style.scss */
 .bin-form input, .bin-form select, .bin-form textarea {
   border: 2px solid #e1e1e1;
   border-radius: 2px;
   color: #888888;
   font-family: 'PT Sans'; }
 
-/* line 389, ../components/sass/style.scss */
+/* line 431, ../components/sass/style.scss */
 .bin-content button {
   position: relative;
   left: 50%;
@@ -539,9 +578,9 @@ a:hover {
   color: white;
   font-size: 14px;
   outline: none; }
-/* line 402, ../components/sass/style.scss */
+/* line 444, ../components/sass/style.scss */
 .bin-content button:hover {
   background: #d74a7e; }
-/* line 405, ../components/sass/style.scss */
+/* line 447, ../components/sass/style.scss */
 .bin-content button:active {
   border-bottom: 2px solid #b1295b; }
