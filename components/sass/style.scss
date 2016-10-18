@@ -514,7 +514,36 @@ margin-top: 30px;
 	}
 }
 
-
-
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+	.menu {
+		top: -128px;
+	}
+	.menu .ulmenu ul li {
+		margin-left: 20px;
+		&:first-child {
+			margin-left: 50px;
+		}
+	}
+	.blocks .new-item {
+		height: 230px;
+	}
+}
+@media screen and (min-width: 1700px) {
+	.menu {
+		top: -130px;
+	}
+	.menu .ulmenu ul li {
+		margin-left: 15px;
+		&:first-child {
+			margin-left: 70px;
+		}
+	}
+	.blocks .new-item {
+		height: 240px;
+		h3 {
+			margin: 10px 10px;
+		}
+	}
+}
 
 

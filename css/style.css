@@ -659,3 +659,37 @@ a:hover {
 /* line 512, ../components/sass/style.scss */
 .bin-content button:active {
   border-bottom: 2px solid #b1295b; }
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  /* line 518, ../components/sass/style.scss */
+  .menu {
+    top: -128px; }
+
+  /* line 521, ../components/sass/style.scss */
+  .menu .ulmenu ul li {
+    margin-left: 20px; }
+  /* line 523, ../components/sass/style.scss */
+  .menu .ulmenu ul li:first-child {
+    margin-left: 50px; }
+
+  /* line 527, ../components/sass/style.scss */
+  .blocks .new-item {
+    height: 230px; } }
+@media screen and (min-width: 1700px) {
+  /* line 532, ../components/sass/style.scss */
+  .menu {
+    top: -130px; }
+
+  /* line 535, ../components/sass/style.scss */
+  .menu .ulmenu ul li {
+    margin-left: 15px; }
+  /* line 537, ../components/sass/style.scss */
+  .menu .ulmenu ul li:first-child {
+    margin-left: 70px; }
+
+  /* line 541, ../components/sass/style.scss */
+  .blocks .new-item {
+    height: 240px; }
+  /* line 543, ../components/sass/style.scss */
+  .blocks .new-item h3 {
+    margin: 10px 10px; } }
