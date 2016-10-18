@@ -137,8 +137,10 @@ a {
 	position: relative;
     top: -110px;
 	.menu{
+
 		&-bird{
 			@include span(1);
+			transition: all 0.3s ease;
 		}
 		&-gallery{
 			@include span(1);
@@ -263,7 +265,7 @@ margin-top: 30px;
 	margin-top: 5px;
 	select {
 		@include span(3);
-		border-color: $gray-light;
+		border: 2px solid $gray-light; 
 		background: url(../img/sarrow.png) no-repeat right;
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -275,7 +277,7 @@ margin-top: 30px;
 }
 .bin-howmuch-text {
 	@include span(3);
-	margin-top: 20px;
+	margin-top: 23px;
 	p {
 		margin-bottom: 10px;
 		font-size: 13px;
